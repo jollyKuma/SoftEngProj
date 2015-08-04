@@ -1,18 +1,19 @@
-@import "foundation/components/tabs";
+
 .center.row {
   height: 300px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 5%;
   max-width: 500px;
-}
 
+}
 .signup-panel {
   padding: 15px;
   i {
     font-size: 30px;
     line-height: 50px;
     color: #999;
+
   }
   form {
     input, span {
@@ -39,4 +40,5 @@ p.title {
 
 .content {
   height: 450px;
+
 }
