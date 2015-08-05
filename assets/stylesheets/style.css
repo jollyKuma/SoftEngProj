@@ -102,6 +102,11 @@ font-family: 'Montserrat', sans-serif;
 .stack{
   margin-top: 20px;
 }
+.quote{
+  color: #ffffff;
+  font-family: 'Cookie',cursive;
+
+}
 
 .signup-panel {
   border-radius: 5px;

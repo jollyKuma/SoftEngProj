@@ -11,7 +11,7 @@
 }
 #mainwrapper .box .title{
     text-align:center;
- font-family: 'Montserrat', sans-serif;
+font-family: 'Montserrat', sans-serif;
     padding:10px 10px 10px 10px;
     font-weight:bold;
  font-size:18px  ;
@@ -20,6 +20,7 @@
     margin: 3px 0px 0px 0px;
     padding:8px 8px 8px 8px;
     text-align:center;
+    font-family: 'Montserrat', sans-serif;
  font-size:18px  ;
 }
 #mainwrapper .box .simple-caption p{
