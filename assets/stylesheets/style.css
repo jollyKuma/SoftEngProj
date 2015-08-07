@@ -11,7 +11,7 @@ body{
 .welcome{
 margin-top: 0px;
 width: 100%;
-  color: #ffffff;
+color: #ffffff;
 background-color: #455A64;
 font-family: 'Montserrat', sans-serif;
 }
@@ -132,4 +132,10 @@ background-color: #ECEFF1;
   font-size: 13px;
   font-weight: 200;
   margin-left: 25%;
+}
+/*table*/
+table{
+  margin: 10px;
+
+
 }
