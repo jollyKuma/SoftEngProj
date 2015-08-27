@@ -1,0 +1,271 @@
+<head>
+    <title>Book Inventory</title>
+    <link rel="stylesheet" type="text/css" href="../public/lib/foundation/css/foundation.css">
+    <link rel="stylesheet" type="text/css" href="../public/lib/foundation-icon-fonts/foundation-icons.css">
+    <link rel="stylesheet" type="text/css" href="../assets/stylesheets/style.css">
+    <link rel="stylesheet" type="text/css" href="../assets/stylesheets/style.scss">
+    <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../assets/stylesheets/tiles.css">
+    <link rel="shortcut icon" href="../assets/images/book.ico">
+</head>
+<div class="off-canvas-wrap" data-offcanvas>
+  <div class="inner-wrap">
+    <nav class="tab-bar  welcome">
+      <section class="left-small">
+        <a class="left-off-canvas-toggle menu-icon  " href="#"><span></span></a>
+      </section>
+      <section class="middle tab-bar-section">
+         <div class="large-6 columns">
+          <div class="row collapse postfix-round">
+             <div class="small-9 columns">
+               <input type="text" placeholder="Author or Title">
+             </div>
+            <div class="small-3 columns">
+              <a href="#" class="button postfix">Go</a>
+            </div>
+        </div>
+    </div>
+      </section>
+  <section class="right-small">
+        <a class="right-off-canvas-toggle menu-icon" ><span></span></a>
+      </section>
+    <section class="top-bar-section navC">
+
+    <!-- Right Nav Section -->
+    <ul class="right">
+      <li class="has-dropdown">
+        <a href="#" class="fi-torso">&nbsp;Username</a>
+        <ul class="dropdown">
+          <li><a href="#" class="fi-widget">&nbsp;Settings</a></li>
+          <li class="active"><a href="#"  class="fi-arrow-right"> &nbsp;Logout</a></li>
+          </li>
+       </ul>
+      </li>
+    </ul>
+    <ul class="right">
+      <li href="#" class="fi-megaphone">&nbsp;</li>
+    </ul>
+  </section>
+    </nav>
+<nav class="breadcrumbs">
+  <a href="#">Dashboard</a>
+  <a href="#">Book Inventory</a>
+<!--  <a class="unavailable" href="#">Gene Splicing</a>
+  <a class="current" href="#">Cloning</a>-->
+</nav>
+
+<!-- Triggers the modals -->
+<dl class="sub-nav">
+  <dt>Actions:</dt>
+  <dd><a  href="#" data-reveal-id="addModal" class="fi-plus"> &nbsp;Add</a></dd>
+  <dd><a  href="#" data-reveal-id="removeModal" class="fi-trash"> &nbsp;Remove</a></dd>
+  <dd><a  href="#" data-reveal-id="editModal"href="#" class="fi-widget">&nbsp;Edit</a></dd>
+  <dd><a  href="#" data-reveal-id="printModal" class="fi-print">&nbsp;Print</a></dd>
+</dl>
+
+<!-- Reveal Modals begin -->
+<div id="addModal" class="reveal-modal" data-reveal aria-labelledby="addModalTitle" aria-hidden="true" role="dialog">
+  <h2 id="addModalTitle">Add Book</h2>
+  <form>
+  <div class="row">
+    <div class="large-8 columns">
+        <input type="text" placeholder="Add Title" />
+        <input type="text" placeholder="Add Author" />
+        <a href="#" data-reveal-id="msgModal" href="#" class="button round">Add</a>
+         <a id="msgModal" href="#"  class="button round">Cancel</a>
+    </div>
+  </div>
+  <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+</div>
+<div id="msgModal" class="reveal-modal" data-reveal aria-labelledby="msgModalTitle" aria-hidden="true" role="dialog">
+  <h2 id="msgModalTitle">Confirmation</h2>
+  <p>Book Added Successfully!</p>
+  <a href="#" class="button postfix">OK</a>
+  <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+</div>
+<div id="removeModal" class="reveal-modal" data-reveal aria-labelledby="secondModalTitle" aria-hidden="true" role="dialog">
+  <h2 id="secondModalTitle">Remove Book</h2>
+  <form>
+  <div class="row collapse">
+   <div class="large-6 columns">
+      <div class="row collapse postfix-round">
+        <div class="small-9 columns">
+          <input type="text" placeholder="Search">
+        </div>
+        <div class="small-3 columns">
+          <a href="#" class="button postfix">Go</a>
+        </div>
+      </div>
+    </div>
+    </div>
+  </form>
+  <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+</div>
+
+<div id="editModal" class="reveal-modal large" data-reveal aria-labelledby="videoModalTitle" aria-hidden="true" role="dialog">
+  <h2 id="videoModalTitle">Edit Book</h2>
+    <form>
+    <div class="row collapse">
+   <div class="large-6 columns">
+      <div class="row collapse postfix-round">
+        <div class="small-9 columns">
+          <input type="text" placeholder="Search">
+        </div>
+        <div class="small-3 columns">
+          <a href="#" class="button postfix">Go</a>
+        </div>
+      </div>
+    </div>
+    </div>
+  <div class="row">
+    <div class="large-8 columns">
+        <input type="text" placeholder="New Title" />
+        <input type="text" placeholder="New Author" />
+        <a href="#" data-reveal-id="UmsgModal" href="#" class="button round">Update</a>
+         <a id="UmsgModal" href="#"  class="button round">Cancel</a>
+    </div>
+  </div>
+  <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+</div>
+<div id="UmsgModal" class="reveal-modal" data-reveal aria-labelledby="UmsgModalTitle" aria-hidden="true" role="dialog">
+  <h2 id="UmsgModalTitle">Confirmation</h2>
+  <p>Book Updated Successfully!</p>
+  <a href="#" class="button postfix">OK</a>
+  <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+</div>
+
+  <div id="printModal" class="reveal-modal large" data-reveal aria-labelledby="videoModalTitle" aria-hidden="true" role="dialog">
+  <h2 id="videoModalTitle">This modal has video</h2>
+  <div class="flex-video widescreen vimeo">
+    <iframe width="1280" height="720" src="//www.youtube-nocookie.com/embed/wnXCopXXblE?rel=0" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+
+</div>
+
+<!-- Reveal Modals end -->
+    <aside class="left-off-canvas-menu leftC">
+      <ul class="off-canvas-list">
+        <li><label>Library System</label></li>
+        <li><a href="#" class="fi-book"> &nbsp;Book Inventory</a></li>
+        <li><a href="#" class="fi-torsos-all">&nbsp;Borrowers List</a></li>
+        <li><a href="#" class="off-canvas-submenu-call fi-heart">&nbsp;Activity Logs <span class="right"> + </span></a></li>
+                <ul class="off-canvas-submenu">
+                <li><a href="#">Returned Books</a></li>
+                <li><a href="#">Barrowed</a></li>
+                <li><a href="#">Search</a></li>
+              </ul>
+        <li><a href="#" class="off-canvas-submenu-call">Option 4 <span class="right"> + </span></a></li>
+                <ul class="off-canvas-submenu">
+                <li><a href="#">Sub menu 1</a></li>
+                <li><a href="#">Sub menu 2</a></li>
+                <li><a href="#">Sub menu 3</a></li>
+              </ul>
+
+        <li><a href="#">Option 5</a></li>
+        <li><a href="#">Option 6</a></li>
+
+      </ul>
+    </aside>
+
+    <section class="main-section">
+      <table>
+  <thead>
+    <tr>
+      <th width="200"></th>
+      <th width="250" class="fi-book"> &nbsp;Title</th>
+      <th width="250" class="fi-torso">&nbsp;Author</th>
+      <th width="250">Quantity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+        <td class="fi-book"></td>
+        <td>Java Programming</td>
+        <td> Ds Malik</td>
+        <td>8</td>
+    </tr>
+    <tr>
+        <td class="fi-book"></td>
+        <td>Java Programming</td>
+        <td> Ds Malik</td>
+        <td>8</td>
+    </tr>
+    <tr>
+        <td class="fi-book"></td>
+        <td>Java Programming</td>
+        <td> Ds Malik</td>
+        <td>8</td>
+    </tr>
+    <tr>
+        <td class="fi-book"></td>
+        <td>Java Programming</td>
+        <td> Ds Malik</td>
+        <td>8</td>
+    </tr>
+    <tr>
+        <td class="fi-book"></td>
+        <td>Java Programming</td>
+        <td> Ds Malik</td>
+        <td>8</td>
+    </tr>
+    <tr>
+        <td class="fi-book"></td>
+        <td>Java Programming</td>
+        <td> Ds Malik</td>
+        <td>8</td>
+    </tr>
+     <tr>
+        <td class="fi-book"></td>
+        <td>Java Programming</td>
+        <td> Ds Malik</td>
+        <td>8</td>
+    </tr>
+     <tr>
+        <td class="fi-book"></td>
+        <td>Java Programming</td>
+        <td> Ds Malik</td>
+        <td>8</td>
+    </tr>
+     <tr>
+        <td class="fi-book"></td>
+        <td>Java Programming</td>
+        <td> Ds Malik</td>
+        <td>8</td>
+    </tr>
+     <tr>
+        <td class="fi-book"></td>
+        <td>Java Programming</td>
+        <td> Ds Malik</td>
+        <td>8</td>
+    </tr>
+     <tr>
+        <td class="fi-book"></td>
+        <td>Java Programming</td>
+        <td> Ds Malik</td>
+        <td>8</td>
+    </tr>
+
+  </tbody>
+</table>
+  <a class="exit-off-canvas"></a>
+
+  </div>
+</div>
+
+  <!-- SCRIPTS -->
+    <script src="../public/lib/jquery/dist/jquery.min.js"></script>
+    <script src="../public/lib/foundation/js/foundation.min.js"></script>
+    <script src="../public/lib/foundation/js/foundation.app.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+    <script >
+      $(document).foundation();
+      $(".off-canvas-submenu").hide();
+      $(".off-canvas-submenu-call").click(function() {
+         var icon = $(this).parent().next(".off-canvas-submenu").is(':visible') ? '+' : '-';
+       $(this).parent().next(".off-canvas-submenu").slideToggle('fast');
+       $(this).find("span").text(icon);
+      });
+    </script>
